@@ -10,9 +10,7 @@ public class VariableIntro {
          * to change a primitive data type, put the new one in ()
          */
         double salary = 10000.56;
-        int bonus = 250;
-
-        bonus = (int) salary;
+        long bonus = 9223372036854775807L;
 
         System.out.println(salary);
         System.out.println(bonus);
