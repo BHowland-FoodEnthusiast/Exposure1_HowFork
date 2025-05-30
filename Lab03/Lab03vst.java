@@ -15,8 +15,8 @@ public class Lab03vst {
         int minutes = milliseconds % 3600000 / 60000;
         System.out.println("Minutes: \t\t\t\t" + minutes);
 
-        int seconds2 = milliseconds % 3600000 % 60000 / 1000;
-        System.out.println("Seconds: \t\t\t\t" + seconds2);
+        int seconds = milliseconds % 3600000 % 60000 / 1000;
+        System.out.println("Seconds: \t\t\t\t" + seconds);
 
         int millisecondsOutPut = milliseconds %1000;
         System.out.println("Milliseconds: \t\t\t" + millisecondsOutPut);
