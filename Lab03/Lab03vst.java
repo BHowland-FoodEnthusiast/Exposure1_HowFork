@@ -3,7 +3,7 @@ package Lab03;
 
 public class Lab03vst {
     public static void main(String[] args) {
-        int milliseconds = 10000123;
+        int milliseconds = 10001123;
 
 
 
