@@ -4,15 +4,16 @@ public class Table {
 
     /*
      * european, so everything is in cm and kg
+     *
      */
 
 
     //attributes - variables
-    double height;
-    double width;
-    double length;
-    double weight;
-    double price;
+    private double height;
+    private double width;
+    private double length;
+    private double weight;
+    private double price;
 
     int legs;
 
@@ -30,16 +31,26 @@ public class Table {
         weight = 52;
         price = 50;
     }
+
+    public Table(double height, double width, double length, double weight){
+        this.height = height;
+        this.width = width;
+        this.length = length;
+        this.weight = weight;
+    }
     // getters/accessors
     public double getHeight() {
+
         return height;
     }
 
     public double getWidth() {
+
         return width;
     }
 
     public double getLength() {
+
         return length;
     }
 
@@ -50,4 +61,28 @@ public class Table {
     public double getPrice() {
         return price;
     }
+
+    // setters/ mutators
+    public void setHeight(double height) {
+        this.height = height;
+    }
+
+    public void setWidth(double width) {
+        this.width = width;
+    }
+    public void setLength(double length) {
+        this.length = length;
+    }
+    public void setWeight(double weight) {
+        if(weight <= 1000) {
+            this.weight = weight;
+        }
+        else {
+            this.weight = 1000;
+        }
+    }
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
 }
